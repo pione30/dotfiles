@@ -143,6 +143,6 @@ let g:quickrun_config['tex'] = {
   \   'command' : 'latexmk',
   \   'outputter' : 'error',
   \   'outputter/error/error' : 'quickfix',
-  \   'cmdopt': '-pv',
+  \   'cmdopt': '',
   \   'exec': ['%c %o %s']
   \ }
