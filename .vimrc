@@ -27,6 +27,9 @@ highlight Cursorline term=none cterm=none ctermfg=none ctermbg=darkgray
 " set clipboard+=unnamed
 set clipboard=unnamedplus
 
+" TeXのconcealを無効化
+let g:tex_conceal=''
+
 
 " pathogen
 execute pathogen#infect()
