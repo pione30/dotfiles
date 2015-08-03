@@ -169,3 +169,10 @@ let g:quickrun_config['tex'] = {
   \   'cmdopt': '-shell-escape',
   \   'exec': ['%c %o %s']
   \ }
+
+
+" caw
+" \cで行の先頭にコメントをつけたり外したりできる
+" http://ichyo.jp/posts/2014-03-14-how-to-comment-out-with-vim/
+nmap <Leader>c <Plug>(caw:i:toggle)
+vmap <Leader>c <Plug>(caw:i:toggle)
