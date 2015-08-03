@@ -159,15 +159,14 @@ endif
 
 
 " vim-quickrun
-if !exists('g:quickrun_config')
-  let g:quickrun_config = {}
-endif
+let g:quickrun_config = {'*' : {'split' : ''}}
+
 let g:quickrun_config['tex'] = {
   \   'command' : 'latexmk',
   \   'outputter' : 'error',
   \   'outputter/error/error' : 'quickfix',
   \   'cmdopt': '-shell-escape',
-  \   'exec': ['%c %o %s']
+  \   'exec': ['%c %o %s'] 
   \ }
 
 
