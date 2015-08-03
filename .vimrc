@@ -15,6 +15,8 @@ set wrapscan
 
 set wildmenu wildmode=list
 
+set splitbelow " splitする際は現在のバッファの下に新しいバッファを開く
+
 set cursorline
 highlight Normal ctermbg=none
 highlight Cursorline term=none cterm=none ctermfg=none ctermbg=darkgray
@@ -162,12 +164,13 @@ endif
 if !exists('g:quickrun_config')
   let g:quickrun_config = {}
 endif
+
 let g:quickrun_config['tex'] = {
   \   'command' : 'latexmk',
-  \   'outputter' : 'error',
-  \   'outputter/error/error' : 'quickfix',
+  \   'outputter' : 'buffer',
+  \   'outputter/buffer/split' : '',
   \   'cmdopt': '-shell-escape',
-  \   'exec': ['%c %o %s']
+  \   'exec': ['%c %o %s'] 
   \ }
 
 
