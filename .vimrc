@@ -167,7 +167,8 @@ endif
 
 let g:quickrun_config['tex'] = {
   \   'command' : 'latexmk',
-  \   'outputter' : 'buffer',
+  \   'outputter' : 'error',
+  \   'outputter/error/error' : 'buffer',
   \   'outputter/buffer/split' : '',
   \   'cmdopt': '-shell-escape',
   \   'exec': ['%c %o %s'] 
