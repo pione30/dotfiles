@@ -115,3 +115,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# alias for vim latex
+alias vimtex='vim --servername LATEX'
