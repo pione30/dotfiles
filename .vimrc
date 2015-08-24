@@ -174,6 +174,12 @@ let g:quickrun_config['tex'] = {
   \   'exec': ['%c %o %s'] 
   \ }
 
+let g:quickrun_config['cpp'] = {
+  \   'command' : 'g++',
+  \   'cmdopt' : '-O2 -std=c++11',
+  \   'input' : 'input.txt'
+  \ }
+
 
 " caw
 " \cで行の先頭にコメントをつけたり外したりできる
