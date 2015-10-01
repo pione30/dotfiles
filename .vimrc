@@ -5,6 +5,7 @@ set number
 set tabstop=2
 au BufNewFile,BufRead *.hs set tabstop=8
 set expandtab
+set shiftwidth=2 " 自動インデントでずれる幅
 set smartindent
 set autoindent
 
