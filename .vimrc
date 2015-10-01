@@ -160,6 +160,8 @@ if has('conceal')
   set conceallevel=2 concealcursor=niv
 endif
 
+" my snippets directory
+let g:neosnippet#snippets_directory='~/.vim/bundle/neosnippet-snippets/snippets/'
 
 " vim-quickrun
 if !exists('g:quickrun_config')
