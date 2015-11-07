@@ -2,10 +2,12 @@ set mouse=a
 
 set number
 
-set tabstop=2
-au BufNewFile,BufRead *.hs set tabstop=8
 set expandtab
+set tabstop=2
 set shiftwidth=2 " 自動インデントでずれる幅
+au BufNewFile,BufRead *.hs set tabstop=8
+au BufNewFile,BufRead *.py set tabstop=4
+au BufNewFile,BufRead *.py set shiftwidth=4
 set smartindent
 set autoindent
 
