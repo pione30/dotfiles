@@ -36,13 +36,19 @@ set clipboard=unnamedplus
 let g:tex_conceal=''
 
 
-" pathogen
+""""""""""""
+" pathogen "
+"
+"
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
 
-" syntastic
+"""""""""""""
+" syntastic "
+"
+"
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -58,7 +64,10 @@ let g:syntastic_haskell_checkers = ['hlint']
 let g:syntastic_tex_checkers = ['lacheck']
 
 
-" neocomplete
+"""""""""""""""
+" neocomplete "
+"
+"
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
 " Use neocomplete.
@@ -143,7 +152,10 @@ endif
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
 
-" neosnippet
+""""""""""""""
+" neosnippet "
+"
+"
 " Plugin key-mappings.
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
 smap <C-k>     <Plug>(neosnippet_expand_or_jump)
@@ -165,7 +177,11 @@ endif
 " my snippets directory
 let g:neosnippet#snippets_directory='~/.vim/bundle/neosnippet-snippets/snippets/'
 
-" vim-quickrun
+
+""""""""""""""""
+" vim-quickrun "
+"
+"
 if !exists('g:quickrun_config')
   let g:quickrun_config = {}
 endif
@@ -186,7 +202,10 @@ let g:quickrun_config['cpp'] = {
   \ }
 
 
-" caw
+"""""""
+" caw "
+"
+"
 " \cで行の先頭にコメントをつけたり外したりできる
 " http://ichyo.jp/posts/2014-03-14-how-to-comment-out-with-vim/
 nmap <Leader>c <Plug>(caw:i:toggle)
