@@ -210,3 +210,10 @@ let g:quickrun_config['cpp'] = {
 " http://ichyo.jp/posts/2014-03-14-how-to-comment-out-with-vim/
 nmap <Leader>c <Plug>(caw:i:toggle)
 vmap <Leader>c <Plug>(caw:i:toggle)
+
+
+"""""""""
+" Unite "
+"
+"
+nnoremap <Leader>f :Unite file<CR>
