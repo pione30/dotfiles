@@ -8,6 +8,7 @@ set shiftwidth=2 " 自動インデントでずれる幅
 au BufNewFile,BufRead *.hs set tabstop=8
 au BufNewFile,BufRead *.py set tabstop=4
 au BufNewFile,BufRead *.py set shiftwidth=4
+au BufNewFile,BufRead Makefile set noexpandtab
 set smartindent
 set autoindent
 
