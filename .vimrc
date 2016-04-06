@@ -60,7 +60,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 let g:syntastic_cpp_compiler = 'g++'
-let g:syntastic_cpp_compiler_options = '-std=c++11'
+let g:syntastic_cpp_compiler_options = '-std=c++14'
 let g:syntastic_haskell_checkers = ['hlint']
 let g:syntastic_tex_checkers = ['lacheck']
 
