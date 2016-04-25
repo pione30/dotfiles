@@ -198,7 +198,7 @@ let g:quickrun_config['tex'] = {
 
 let g:quickrun_config['cpp'] = {
   \   'command' : 'g++',
-  \   'cmdopt' : '-O2 -std=c++11',
+  \   'cmdopt' : '-O2 -std=c++14',
   \   'input' : 'input.txt'
   \ }
 
