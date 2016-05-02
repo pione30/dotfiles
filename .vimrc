@@ -2,6 +2,8 @@ set mouse=a
 
 set number
 
+filetype on
+
 set expandtab
 set tabstop=2
 set shiftwidth=2 " 自動インデントでずれる幅
