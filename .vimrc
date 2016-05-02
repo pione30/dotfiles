@@ -202,6 +202,13 @@ let g:quickrun_config['cpp'] = {
   \   'input' : 'input.txt'
   \ }
 
+let g:quickrun_config['gnuplot'] = {
+  \   'command' : 'gnuplot5',
+  \   'cmdopt' : '-p -c',
+  \   'outputter' : 'error',
+  \   'outputter/error/error' : 'buffer'
+  \ }
+
 
 """""""
 " caw "
