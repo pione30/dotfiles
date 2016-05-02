@@ -3,6 +3,7 @@ set mouse=a
 set number
 
 filetype on
+au BufNewFile,BufRead *.plt setf gnuplot
 
 set expandtab
 set tabstop=2
