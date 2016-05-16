@@ -82,8 +82,15 @@ fi
 # alias for vim latex
 alias vimtex='vim --servername LATEX'
 
+# Color prompt settings. 
+# If the current session is SSH-connected, that will be notified.
 #PS1='\u@\h:\w\$ '  # Default
-PS1='\[\e[0;32m\]\u@\h:\[\e[m\]\[\e[1;34m\]\w\[\e[m\]\[\e[1;32m\]\$\[\e[m\] '
+if [ -n "$SSH_CLIENT" ]; then
+  text=" ssh-session"
+else
+  text=""
+fi
+PS1='\[\e[0;32m\]\u@\h:\[\e[m\]\[\e[1;34m\]\w\[\e[m\]\[\e[1;32m\]${text}\$\[\e[m\] '
 # 上の文字列にはカラーセットのエスケープシーケンス (\[\e[color\] で始まり \[\e[m\] で終わる) と情報のプレースホルダが含まれています:
 # \u - ユーザー名。元のプロンプトにある \h はホスト名を表示します。
 # \w - カレントディレクトリの絶対パス。相対パスを表示するには \W を使います。
