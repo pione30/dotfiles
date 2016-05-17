@@ -12,13 +12,13 @@ au BufNewFile,BufRead *.hs set tabstop=8
 au BufNewFile,BufRead *.py set tabstop=4
 au BufNewFile,BufRead *.py set shiftwidth=4
 au BufNewFile,BufRead Makefile set noexpandtab
-set smartindent
-set autoindent
+set autoindent  " 改行時に前の行のインデントを継続する
+set smartindent " 幾つかのC構文を認識し、適切な箇所のインデントを増減させる
 
 set incsearch
 set ignorecase
 set smartcase
-set wrapscan
+set wrapscan   " 検索がファイル末尾まで進んだら、ファイル先頭から再び検索する
 
 set wildmenu wildmode=list
 
@@ -33,6 +33,7 @@ highlight Cursorline term=none cterm=none ctermfg=none ctermbg=darkgray
 " set clipboard=autoselect
  
 " 無名レジスタに入るデータを、*レジスタにも入れる。
+" 以下のどちらかを有効にすると良い。
 " set clipboard+=unnamed
 set clipboard=unnamedplus
 
