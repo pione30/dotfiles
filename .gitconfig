@@ -7,3 +7,7 @@
 	ui = true
 [push]
 	default = simple
+[merge]
+	ff = false
+[pull]
+	ff = only

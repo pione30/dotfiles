@@ -20,7 +20,9 @@ set ignorecase
 set smartcase
 set wrapscan   " 検索がファイル末尾まで進んだら、ファイル先頭から再び検索する
 
-set wildmenu wildmode=list
+" 最初の1回目の <Tab> では共通部分までの補完をしつつ補完候補を出し、
+" 次回以降はこの補完候補を順に選択する
+set wildmode=longest:full,full
 
 set splitbelow " splitする際は現在のバッファの下に新しいバッファを開く
 
