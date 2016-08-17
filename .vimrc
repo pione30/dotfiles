@@ -19,6 +19,7 @@ set incsearch
 set ignorecase
 set smartcase
 set wrapscan   " 検索がファイル末尾まで進んだら、ファイル先頭から再び検索する
+set hlsearch   " マッチを強調表示する
 
 " 最初の1回目の <Tab> では共通部分までの補完をしつつ補完候補を出し、
 " 次回以降はこの補完候補を順に選択する
