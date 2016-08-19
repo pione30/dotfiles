@@ -24,6 +24,7 @@ set hlsearch   " マッチを強調表示する
 cmap <C-p> <Up>
 cmap <C-n> <Down>
 
+set wildmenu
 " 最初の1回目の <Tab> では共通部分までの補完をしつつ補完候補を出し、
 " 次回以降はこの補完候補を順に選択する
 set wildmode=list:longest,list:full
