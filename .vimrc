@@ -2,7 +2,7 @@ set mouse=a
 
 set number
 
-filetype on
+filetype plugin indent on
 au BufNewFile,BufRead *.plt setf gnuplot
 
 set expandtab
