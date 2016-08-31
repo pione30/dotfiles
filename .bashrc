@@ -75,3 +75,5 @@ PS1="\[\e[0;32m\]\u@\h:\[\e[m\]\[\e[1;34m\]\w\[\e[m\]\[\e[1;32m\]${text}\$\[\e[m
 # その他の特殊文字については、gnu.org の bash プロンプトのコントロール のウェブページを見て下さい。
 unset text
 
+# vi-like keybind
+set -o vi
