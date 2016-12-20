@@ -2,16 +2,16 @@
   " install directory
   let s:dein_dir = expand('~/.cache/dein')
   " dein.vim
-  let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
+  let g:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
   " if dein.vim does not exist, clone from github
   " and add the directory to runtimepath.
   if &runtimepath !~# '/dein.vim'
-    if !isdirectory(s:dein_repo_dir)
-      execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
+    if !isdirectory(g:dein_repo_dir)
+      execute '!git clone https://github.com/Shougo/dein.vim' g:dein_repo_dir
     endif
     "Required:
-    execute 'set runtimepath+=' . fnamemodify(s:dein_repo_dir, ':p')
+    execute 'set runtimepath+=' . fnamemodify(g:dein_repo_dir, ':p')
   endif
 
   if &compatible
