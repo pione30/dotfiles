@@ -48,8 +48,8 @@ set wildmode=list:longest,list:full
  
 " 無名レジスタに入るデータを、*レジスタにも入れる。
 " 以下のどちらかを有効にすると良い。
-" set clipboard+=unnamed
-set clipboard=unnamedplus
+set clipboard+=unnamed
+" set clipboard=unnamedplus
 
 " TeXのconcealを無効化
 let g:tex_conceal=''
