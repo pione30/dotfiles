@@ -30,7 +30,7 @@
     call dein#add('Shougo/neosnippet.vim')
     call dein#add('Shougo/neosnippet-snippets')
     call dein#add('Shougo/neocomplete.vim')
-    call dein#add('Shougo/unite.vim')
+    call dein#add('Shougo/denite.nvim')
     call dein#add('scrooloose/syntastic')
     call dein#add('thinca/vim-quickrun')
     call dein#add('tyru/caw.vim')

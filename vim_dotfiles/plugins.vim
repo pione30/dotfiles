@@ -147,6 +147,6 @@
   vmap <Leader>c <Plug>(caw:hatpos:toggle)
 "End caw Scripts--------------------------
 
-"Unite Scripts----------------------------
-  nnoremap <Leader>f :Unite file<CR>
-"End Unite Scripts------------------------
+"Denite Scripts----------------------------
+  nnoremap <Leader>f :Denite file_rec <CR>
+"End Denite Scripts------------------------
