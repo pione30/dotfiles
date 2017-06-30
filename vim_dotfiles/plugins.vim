@@ -147,6 +147,20 @@
   vmap <Leader>c <Plug>(caw:hatpos:toggle)
 "End caw Scripts--------------------------
 
-"Unite Scripts----------------------------
-  nnoremap <Leader>f :Unite file<CR>
-"End Unite Scripts------------------------
+"Denite Scripts----------------------------
+  nnoremap <Leader>f :Denite file_rec <CR>
+
+	" Change mappings.
+	call denite#custom#map(
+	      \ 'insert',
+	      \ '<C-j>',
+	      \ '<denite:move_to_next_line>',
+	      \ 'noremap'
+	      \)
+	call denite#custom#map(
+	      \ 'insert',
+	      \ '<C-k>',
+	      \ '<denite:move_to_previous_line>',
+	      \ 'noremap'
+	      \)
+"End Denite Scripts------------------------
