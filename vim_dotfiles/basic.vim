@@ -26,6 +26,8 @@ set nrformats+=alpha " アルファベットを Ctrl-A / Ctrl-X できるよう�
 
 set splitbelow " splitする際は現在のバッファの下に新しいバッファを開く
 
+set backspace=indent,eol,start " more powerful backspacing
+
 set cursorline
 highlight Normal ctermbg=none
 highlight Cursorline term=none cterm=none ctermfg=none ctermbg=darkgray
