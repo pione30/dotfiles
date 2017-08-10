@@ -1,19 +1,20 @@
+filetype plugin indent on
+
 set mouse=a
 
 set number
 
-filetype plugin indent on
-au BufNewFile,BufRead *.plt setf gnuplot
-
 set expandtab
 set tabstop=2
 set shiftwidth=2 " 自動インデントでずれる幅
-au BufNewFile,BufRead *.hs set tabstop=8
-au BufNewFile,BufRead *.py set tabstop=4
-au BufNewFile,BufRead *.py set shiftwidth=4
-au BufNewFile,BufRead Makefile set noexpandtab
 set autoindent  " 改行時に前の行のインデントを継続する
 set smartindent " 幾つかのC構文を認識し、適切な箇所のインデントを増減させる
+
+autocmd BufNewFile,BufRead *.plt setf gnuplot
+autocmd BufNewFile,BufRead *.hs set tabstop=8
+autocmd BufNewFile,BufRead *.py set tabstop=4
+autocmd BufNewFile,BufRead *.py set shiftwidth=4
+autocmd BufNewFile,BufRead Makefile set noexpandtab
 
 set incsearch
 set ignorecase
