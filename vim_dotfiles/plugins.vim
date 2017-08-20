@@ -167,3 +167,12 @@
 	      \ 'noremap'
 	      \)
 "End Denite Scripts------------------------
+
+"previm Scripts----------------------------
+	let g:previm_open_cmd = 'google-chrome'
+
+  augroup PrevimSettings
+      autocmd!
+      autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
+  augroup END
+"End previm Scripts----------------------------
