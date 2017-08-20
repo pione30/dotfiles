@@ -1,4 +1,8 @@
 "dein Scripts-----------------------------
+  if &compatible
+    set nocompatible               " Be iMproved
+  endif
+
   " install directory
   let s:dein_dir = expand('~/.cache/dein')
   " Shougo directory
@@ -13,11 +17,6 @@
       execute '!git clone https://github.com/Shougo/dein.vim' g:dein_repo_dir
     endif
   endif
-
-  if &compatible
-    set nocompatible               " Be iMproved
-  endif
-  
   execute 'set runtimepath^=' . g:dein_repo_dir
 
   if dein#load_state(s:dein_dir)
@@ -34,6 +33,7 @@
     call dein#add('scrooloose/syntastic')
     call dein#add('thinca/vim-quickrun')
     call dein#add('tyru/caw.vim')
+    call dein#add('kannokanno/previm')
 
     " You can specify revision/branch/tag.
     " call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
