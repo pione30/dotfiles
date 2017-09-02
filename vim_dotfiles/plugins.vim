@@ -11,6 +11,7 @@
   let g:syntastic_cpp_compiler = 'g++'
   let g:syntastic_cpp_compiler_options = '-std=c++14 -Wall'
   let g:syntastic_haskell_checkers = ['hlint']
+  let g:syntastic_html_checkers = ['htmlhint']
   let g:syntastic_tex_checkers = ['lacheck']
 "End syntastic Scripts--------------------
 
