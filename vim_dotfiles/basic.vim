@@ -47,14 +47,9 @@ nnoremap O :<C-u>call append(expand('.'), '')<Cr>j
 set wildmenu
 set wildmode=list:longest,list:full
 
-" ビジュアルモードで選択したテキストが、クリップボードに入るようにする
-" http://nanasi.jp/articles/howto/editing/clipboard.html
-" set clipboard=autoselect
- 
-" 無名レジスタに入るデータを、*レジスタにも入れる。
-" 以下のどちらかを有効にすると良い。
-set clipboard+=unnamed
-" set clipboard=unnamedplus
+set clipboard& " clipboard オプションの値をデフォルト値にセットする 
+set clipboard^=unnamedplus " 無名レジスタに入るデータを + レジスタにも入れる
+" set clipboard^=autoselect " ビジュアルモードで選択したテキストが、クリップボードに入るようにする
 
 " TeXのconcealを無効化
 let g:tex_conceal=''
