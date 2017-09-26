@@ -115,7 +115,7 @@
   endif
 
   " my snippets directory
-  let g:neosnippet#snippets_directory = g:Shougo_dir . '/neosnippet-snippets/snippets'
+  " let g:neosnippet#snippets_directory = g:Shougo_dir . '/neosnippet-snippets/snippets'
 "End neosnippet Scripts-------------------
 
 "vim-quickrun Scripts---------------------
