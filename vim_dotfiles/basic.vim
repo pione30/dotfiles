@@ -24,6 +24,8 @@ set smartcase
 set wrapscan   " 検索がファイル末尾まで進んだら、ファイル先頭から再び検索する
 set hlsearch   " マッチを強調表示する
 
+set history=200
+
 set nrformats-=octal " 0 始まりの数字を 8 進数 Ctrl-A / Ctrl-X しない
 set nrformats+=alpha " アルファベットを Ctrl-A / Ctrl-X できるようにする
 
