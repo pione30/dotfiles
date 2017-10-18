@@ -57,6 +57,9 @@ set clipboard& " clipboard オプションの値をデフォルト値にセッ�
 set clipboard^=unnamedplus " 無名レジスタに入るデータを + レジスタにも入れる
 " set clipboard^=autoselect " ビジュアルモードで選択したテキストが、クリップボードに入るようにする
 
+" % コマンドで対となるキーワードの組の間を移動できるようにする
+runtime macros/matchit.vim
+
 " TeXのconcealを無効化
 let g:tex_conceal=''
 
