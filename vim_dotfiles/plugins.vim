@@ -179,3 +179,21 @@
       autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
   augroup END
 "End previm Scripts----------------------------
+
+"vim-asterisk
+  map *   <Plug>(asterisk-*)
+  map #   <Plug>(asterisk-#)
+  map g*  <Plug>(asterisk-g*)
+  map g#  <Plug>(asterisk-g#)
+  map z*  <Plug>(asterisk-z*)
+  map gz* <Plug>(asterisk-gz*)
+  map z#  <Plug>(asterisk-z#)
+  map gz# <Plug>(asterisk-gz#)
+
+  " To enable keepCursor feature
+  " let g:asterisk#keeppos = 1
+"End vim-asterisk
+
+"iceberg
+  colorscheme iceberg
+"End iceberg
