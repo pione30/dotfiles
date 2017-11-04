@@ -35,6 +35,7 @@
     call dein#add('tyru/caw.vim')
     call dein#add('kannokanno/previm')
     call dein#add('haya14busa/vim-asterisk')
+    call dein#add('cohama/lexima.vim')
 
     " You can specify revision/branch/tag.
     " call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
