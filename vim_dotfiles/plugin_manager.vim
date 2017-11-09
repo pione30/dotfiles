@@ -34,6 +34,7 @@
     call dein#add('tyru/caw.vim')
     call dein#add('kannokanno/previm')
     call dein#add('haya14busa/vim-asterisk')
+    call dein#add('haya14busa/vim-migemo')
     call dein#add('cohama/lexima.vim')
     call dein#add('cocopon/iceberg.vim')
 
