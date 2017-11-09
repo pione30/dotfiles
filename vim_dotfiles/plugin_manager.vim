@@ -28,13 +28,21 @@
     " Add or remove your plugins here:
     call dein#add('Shougo/neosnippet.vim')
     call dein#add('Shougo/neosnippet-snippets')
-    call dein#add('Shougo/neocomplete.vim')
     call dein#add('Shougo/denite.nvim')
     call dein#add('scrooloose/syntastic')
     call dein#add('thinca/vim-quickrun')
     call dein#add('tyru/caw.vim')
     call dein#add('kannokanno/previm')
-    call dein#add('nelstrom/vim-visual-star-search')
+    call dein#add('haya14busa/vim-asterisk')
+    call dein#add('haya14busa/vim-migemo')
+    call dein#add('cohama/lexima.vim')
+    call dein#add('cocopon/iceberg.vim')
+
+    call dein#add('Shougo/deoplete.nvim')
+    if !has('nvim')
+      call dein#add('roxma/nvim-yarp')
+      call dein#add('roxma/vim-hug-neovim-rpc')
+    endif
 
     " You can specify revision/branch/tag.
     " call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
