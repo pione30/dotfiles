@@ -43,9 +43,6 @@
   if has('conceal')
     set conceallevel=2 concealcursor=niv
   endif
-
-  " my snippets directory
-  " let g:neosnippet#snippets_directory = g:Shougo_dir . '/neosnippet-snippets/snippets'
 "End neosnippet Scripts-------------------
 
 "vim-quickrun Scripts---------------------

@@ -5,19 +5,18 @@
 
   " install directory
   let s:dein_dir = expand('~/.cache/dein')
-  " Shougo directory
-  let g:Shougo_dir = s:dein_dir . '/repos/github.com/Shougo'
   " dein.vim
-  let g:dein_repo_dir = g:Shougo_dir . '/dein.vim'
+  let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
   " if dein.vim does not exist, clone from github
-  " and add the directory to runtimepath.
   if &runtimepath !~# '/dein.vim'
-    if !isdirectory(g:dein_repo_dir)
-      execute '!git clone https://github.com/Shougo/dein.vim' g:dein_repo_dir
+    if !isdirectory(s:dein_repo_dir)
+      execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
     endif
   endif
-  execute 'set runtimepath^=' . g:dein_repo_dir
+
+  " add the directory to runtimepath.
+  execute 'set runtimepath^=' . s:dein_repo_dir
 
   if dein#load_state(s:dein_dir)
     call dein#begin(s:dein_dir)
