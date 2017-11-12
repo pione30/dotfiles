@@ -1,0 +1,11 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'cocopon/iceberg.vim'
+hook_add = '''
+  augroup ColorSchemeAutoCmd
+    autocmd!
+    autocmd VimEnter * nested colorscheme iceberg
+  augroup END
+'''
