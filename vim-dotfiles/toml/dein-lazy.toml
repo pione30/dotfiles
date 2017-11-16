@@ -1,8 +1,7 @@
 [[plugins]]
 repo = 'Shougo/neosnippet.vim'
 depends = ['neosnippet-snippets', 'context_filetype.vim']
-on_event = 'InsertCharPre'
-on_ft = 'snippet'
+on_event = ['InsertCharPre']
 hook_post_source = '''
   " Plugin key-mappings.
   " Note: It must be "imap" and "smap".  It uses <Plug> mappings.
@@ -55,7 +54,7 @@ hook_post_source = '''
 
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
-on_event = ['InsertEnter']
+on_event = ['InsertCharPre']
 depends = ['roxma/nvim-yarp', 'roxma/vim-hug-neovim-rpc']
 hook_add = '''
   " Use deoplete
