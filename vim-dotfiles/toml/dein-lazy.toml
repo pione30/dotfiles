@@ -55,7 +55,7 @@ hook_post_source = '''
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
 on_event = ['InsertCharPre']
-depends = ['roxma/nvim-yarp', 'roxma/vim-hug-neovim-rpc']
+depends = ['nvim-yarp', 'vim-hug-neovim-rpc']
 hook_add = '''
   " Use deoplete
   let g:deoplete#enable_at_startup = 1
