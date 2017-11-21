@@ -152,6 +152,7 @@ hook_post_source = '''
 
 [[plugins]]
 repo = 'kannokanno/previm'
+on_event = ['VimEnter']
 hook_add = '''
 	let g:previm_open_cmd = 'google-chrome'
 
