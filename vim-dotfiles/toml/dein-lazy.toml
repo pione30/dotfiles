@@ -117,7 +117,7 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'scrooloose/syntastic'
+repo = 'vim-syntastic/syntastic'
 on_event = ['BufWritePost']
 hook_post_source = '''
   set statusline+=%#warningmsg#
