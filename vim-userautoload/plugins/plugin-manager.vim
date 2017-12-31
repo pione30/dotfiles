@@ -21,7 +21,7 @@
   if dein#load_state(s:dein_dir)
     call dein#begin(s:dein_dir)
 
-    let s:toml_dir = expand('~/dotfiles/vim-dotfiles/toml')
+    let s:toml_dir = expand('~/dotfiles/vim-userautoload/plugins/toml')
     call dein#load_toml(s:toml_dir . '/dein.toml',      {'lazy': 0})
     call dein#load_toml(s:toml_dir . '/dein-lazy.toml', {'lazy': 1})
 
