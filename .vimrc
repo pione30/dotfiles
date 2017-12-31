@@ -1,4 +1,7 @@
+set encoding=utf-8
 scriptencoding utf-8
 
-source ~/dotfiles/vim-dotfiles/basic.vim
-source ~/dotfiles/vim-dotfiles/plugin-manager.vim
+execute 'set runtimepath^=' . expand('~/dotfiles')
+
+runtime! vim-userautoload/init/*.vim
+runtime! vim-userautoload/plugins/*.vim
