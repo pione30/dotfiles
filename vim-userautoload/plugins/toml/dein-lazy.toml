@@ -117,7 +117,7 @@ hook_add = '''
 
 [[plugins]]
 repo = 'vim-syntastic/syntastic'
-on_event = ['BufWritePost']
+on_event = ['VimEnter']
 hook_post_source = '''
   set statusline+=%#warningmsg#
   set statusline+=%{SyntasticStatuslineFlag()}
