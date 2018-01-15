@@ -2,6 +2,13 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
+repo = 'itchyny/lightline.vim'
+hook_add = '''
+  set laststatus=2
+  set noshowmode
+'''
+
+[[plugins]]
 repo = 'cocopon/iceberg.vim'
 hook_add = '''
   augroup ColorSchemeAutoCmd
