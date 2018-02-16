@@ -86,7 +86,7 @@ hook_add = '''
 repo = 'aignas/omnisharp-vim'
 rev = 'feature/py3k'
 on_ft = 'cs'
-depends = ['deoplete']
+depends = ['deoplete.nvim']
 hook_add = '''
   augroup omnisharp_commands
     autocmd!
