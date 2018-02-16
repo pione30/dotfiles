@@ -60,6 +60,11 @@ hook_add = '''
   let g:deoplete#enable_at_startup = 1
   " Use smartcase.
 	let g:deoplete#enable_smart_case = 1
+  
+  " initialize dictionaries
+  let g:deoplete#sources = {}
+  let g:deoplete#omni#input_patterns = {}
+  let g:deoplete#omni#functions = {}
 
 	" <C-h>, <BS>: close popup and delete backword char.
 	inoremap <expr><C-h> deoplete#smart_close_popup()."\<C-h>"
@@ -70,10 +75,16 @@ hook_add = '''
 	function! s:my_cr_function() abort
 	  return deoplete#close_popup() . "\<CR>"
 	endfunction
+
+  " for omnisharp
+  let g:deoplete#sources.cs = ['omni', 'file', 'buffer']
+  let g:deoplete#omni#input_patterns.cs = ['\w*']
+  let g:deoplete#omni#functions.cs = 'OmniSharp#Complete'
 '''
 
 [[plugins]]
 repo = 'aignas/omnisharp-vim'
+rev = 'feature/py3k'
 on_ft = 'cs'
 depends = ['deoplete']
 hook_add = '''
