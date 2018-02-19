@@ -79,7 +79,7 @@ hook_add = '''
   " for omnisharp
   let g:deoplete#sources.cs = ['omni', 'file', 'buffer']
   let g:deoplete#omni#input_patterns.cs = ['\w*']
-  let g:deoplete#omni#functions.cs = 'OmniSharp#Complete'
+  let g:deoplete#omni#functions.cs = ['OmniSharp#Complete']
 '''
 
 [[plugins]]
