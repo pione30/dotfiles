@@ -78,8 +78,8 @@ hook_add = '''
 
   " for omnisharp
   let g:deoplete#sources.cs = ['omni', 'file', 'buffer']
-  let g:deoplete#omni#input_patterns.cs = ['\w*']
-  let g:deoplete#omni#functions.cs = ['OmniSharp#Complete']
+  " let g:deoplete#omni#input_patterns.cs = ['\w*']
+  " let g:deoplete#omni#functions.cs = ['OmniSharp#Complete']
 '''
 
 [[plugins]]
@@ -91,7 +91,7 @@ hook_add = '''
   augroup omnisharp_commands
     autocmd!
 
-    autocmd FileType cs nnoremap gd :OmniSharpGotoDefinition<cr>
+    " autocmd FileType cs nnoremap gd :OmniSharpGotoDefinition<cr>
 
   augroup END
 '''
