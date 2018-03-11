@@ -214,9 +214,6 @@ hook_post_source = '''
 '''
 
 [[plugins]]
-repo = 'haya14busa/vim-migemo'
-
-[[plugins]]
 repo = 'cohama/lexima.vim'
 on_event = ['InsertEnter']
 
