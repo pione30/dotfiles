@@ -83,20 +83,6 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'aignas/omnisharp-vim'
-rev = 'feature/py3k'
-on_ft = 'cs'
-build = 'sh -c "cd server && msbuild"'
-hook_add = '''
-  augroup omnisharp_commands
-    autocmd!
-
-    " autocmd FileType cs nnoremap gd :OmniSharpGotoDefinition<cr>
-
-  augroup END
-'''
-
-[[plugins]]
 repo = 'roxma/nvim-yarp'
 if = ''' !has('nvim') '''
 
