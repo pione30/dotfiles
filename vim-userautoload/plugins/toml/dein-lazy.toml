@@ -76,6 +76,11 @@ hook_post_source = '''
   \ '_': ['buffer'],
   \ 'cs': ['omni', 'file', 'buffer'],
   \ })
+
+  " omni_patterns
+  call deoplete#custom#option('omni_patterns', {
+  \ 'ruby': '[^. *\t]\.\w*\|\h\w*::',
+  \ })
 '''
 
 [[plugins]]
@@ -85,6 +90,10 @@ if = ''' !has('nvim') '''
 [[plugins]]
 repo = 'roxma/vim-hug-neovim-rpc'
 if = ''' !has('nvim') '''
+
+[[plugins]]
+repo = 'osyo-manga/vim-monster'
+on_ft = ['ruby']
 
 [[plugins]]
 repo = 'thinca/vim-quickrun'
