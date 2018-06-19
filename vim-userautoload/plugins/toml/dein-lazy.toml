@@ -55,17 +55,12 @@ hook_post_source = '''
 repo = 'Shougo/deoplete.nvim'
 on_event = ['InsertEnter']
 depends = ['nvim-yarp', 'vim-hug-neovim-rpc']
-hook_add = '''
-  " Use deoplete
-  let g:deoplete#enable_at_startup = 1
-  " Use smartcase.
-	let g:deoplete#enable_smart_case = 1
+hook_post_source = '''
+	" Use deoplete.
+	call deoplete#enable()
+	" Use smartcase.
+	call deoplete#custom#option('smart_case', v:true)
   
-  " initialize dictionaries
-  let g:deoplete#sources = {}
-  let g:deoplete#omni#input_patterns = {}
-  let g:deoplete#omni#functions = {}
-
 	" <C-h>, <BS>: close popup and delete backword char.
 	inoremap <expr><C-h> deoplete#smart_close_popup()."\<C-h>"
 	inoremap <expr><BS>  deoplete#smart_close_popup()."\<C-h>"
@@ -76,24 +71,16 @@ hook_add = '''
 	  return deoplete#close_popup() . "\<CR>"
 	endfunction
 
-  " for omnisharp
-  let g:deoplete#sources.cs = ['omni', 'file', 'buffer']
-  " let g:deoplete#omni#input_patterns.cs = ['\w*']
-  " let g:deoplete#omni#functions.cs = ['OmniSharp#Complete']
-'''
+  " sources
+  call deoplete#custom#option('sources', {
+  \ '_': ['buffer'],
+  \ 'cs': ['omni', 'file', 'buffer'],
+  \ })
 
-[[plugins]]
-repo = 'aignas/omnisharp-vim'
-rev = 'feature/py3k'
-on_ft = 'cs'
-build = 'sh -c "cd server && msbuild"'
-hook_add = '''
-  augroup omnisharp_commands
-    autocmd!
-
-    " autocmd FileType cs nnoremap gd :OmniSharpGotoDefinition<cr>
-
-  augroup END
+  " omni_patterns
+  call deoplete#custom#option('omni_patterns', {
+  \ 'ruby': '[^. *\t]\.\w*\|\h\w*::',
+  \ })
 '''
 
 [[plugins]]
@@ -103,6 +90,10 @@ if = ''' !has('nvim') '''
 [[plugins]]
 repo = 'roxma/vim-hug-neovim-rpc'
 if = ''' !has('nvim') '''
+
+[[plugins]]
+repo = 'osyo-manga/vim-monster'
+on_ft = ['ruby']
 
 [[plugins]]
 repo = 'thinca/vim-quickrun'
