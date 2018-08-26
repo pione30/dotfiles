@@ -186,6 +186,10 @@ repo = 'cohama/lexima.vim'
 on_event = ['InsertEnter']
 
 
+[[plugins]]
+repo = 'tpope/vim-rails'
+on_ft = ['ruby', 'eruby']
+
 # You can specify revision/branch/tag.
 # repo = 'Shougo/vimshell'
 # rev = '3787e5'
