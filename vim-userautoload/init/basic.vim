@@ -27,3 +27,9 @@ runtime macros/matchit.vim
 
 " TeXのconcealを無効化
 let g:tex_conceal=''
+
+" 複数のファイルタイプを設定したいファイルを記述する
+augroup multiple_filetypes
+  autocmd!
+  autocmd BufRead,BufNewFile *.erb set ft=eruby.html
+augroup END
