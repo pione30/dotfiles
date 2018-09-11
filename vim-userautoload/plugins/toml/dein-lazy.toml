@@ -156,7 +156,11 @@ hook_post_source = '''
 repo = 'kannokanno/previm'
 on_ft = ['markdown']
 hook_add = '''
-	let g:previm_open_cmd = 'google-chrome'
+  if has('mac')
+    let g:previm_open_cmd = 'open -a "/Applications/Google Chrome.app"'
+  else
+    let g:previm_open_cmd = 'google-chrome'
+  endif
 
   augroup PrevimSettings
       autocmd!
