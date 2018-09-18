@@ -8,7 +8,6 @@ set smartindent " 幾つかのC構文を認識し、適切な箇所のインデ�
 " 良くなさそうと思ったので, とりあえずここに書く
 augroup vimrc_basic
   autocmd!
-  autocmd BufRead,BufNewFile *.plt setf gnuplot
   autocmd BufRead,BufNewFile *.hs set tabstop=8
   autocmd BufRead,BufNewFile *.py set tabstop=4 shiftwidth=4
   autocmd BufRead,BufNewFile *.cs set tabstop=4 shiftwidth=4
