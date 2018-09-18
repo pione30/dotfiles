@@ -161,11 +161,6 @@ hook_add = '''
   else
     let g:previm_open_cmd = 'google-chrome'
   endif
-
-  augroup PrevimSettings
-      autocmd!
-      autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
-  augroup END
 '''
 
 [[plugins]]
@@ -197,12 +192,6 @@ on_ft = ['ruby', 'eruby']
 [[plugins]]
 repo = 'slim-template/vim-slim'
 on_ft = ['slim']
-hook_add = '''
-  augroup VimSlimSettings
-      autocmd!
-      autocmd BufNewFile,BufRead *.slim set filetype=slim
-  augroup END
-'''
 
 # You can specify revision/branch/tag.
 # repo = 'Shougo/vimshell'
