@@ -4,4 +4,5 @@ augroup vimrc_filetypes
   autocmd BufRead,BufNewFile *.erb set ft=eruby.html
   autocmd BufRead,BufNewFile *.{md,mdwn,mkd,mkdn,mark*} set ft=markdown
   autocmd BufRead,BufNewFile *.slim set ft=slim
+  autocmd BufRead,BufNewFile *.coffee set ft=coffee
 augroup END

@@ -193,6 +193,10 @@ on_ft = ['ruby', 'eruby']
 repo = 'slim-template/vim-slim'
 on_ft = ['slim']
 
+[[plugins]]
+repo = 'kchmck/vim-coffee-script'
+on_ft = ['coffee']
+
 # You can specify revision/branch/tag.
 # repo = 'Shougo/vimshell'
 # rev = '3787e5'
