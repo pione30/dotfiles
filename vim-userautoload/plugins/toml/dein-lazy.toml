@@ -197,6 +197,10 @@ on_ft = ['slim']
 repo = 'kchmck/vim-coffee-script'
 on_ft = ['coffee']
 
+[[plugins]]
+repo = 'simeji/winresizer'
+on_event = ['VimEnter']
+
 # You can specify revision/branch/tag.
 # repo = 'Shougo/vimshell'
 # rev = '3787e5'
