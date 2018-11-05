@@ -6,7 +6,7 @@ set smartindent " 幾つかのC構文を認識し、適切な箇所のインデ�
 
 " augroup を別ファイルにするかは迷ったが, tab 関連の設定順序が前後すると
 " 良くなさそうと思ったので, とりあえずここに書く
-augroup vimrc_basic
+augroup vimrc_tabs_and_indents
   autocmd!
   autocmd BufRead,BufNewFile *.hs set tabstop=8
   autocmd BufRead,BufNewFile *.py set tabstop=4 shiftwidth=4

@@ -27,3 +27,9 @@ runtime macros/matchit.vim
 
 " TeXのconcealを無効化
 let g:tex_conceal=''
+
+" grep の後, 自動的に copen する
+augroup vimrc_basic
+  autocmd!
+  autocmd QuickFixCmdPost *grep* copen
+augroup END
