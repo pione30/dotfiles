@@ -23,3 +23,9 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # alias for vim latex
 alias vimtex='vim --servername LATEX'
 
+# docker-compose
+alias dce='docker-compose exec'
+
+# bundle exec rails
+alias ber='bundle exec rails'
+alias berc='bundle exec rails console'
