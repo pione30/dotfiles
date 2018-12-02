@@ -28,8 +28,16 @@ runtime macros/matchit.vim
 " TeXのconcealを無効化
 let g:tex_conceal=''
 
-" grep の後, 自動的に copen する
 augroup vimrc_basic
   autocmd!
+  " grep の後, 自動的に copen する
   autocmd QuickFixCmdPost *grep* copen
+  " 保存時にフックして常に末尾の空白を削除する
+  autocmd BufWritePre * call s:removeTrailingWhiteSpace()
 augroup END
+
+func! s:removeTrailingWhiteSpace()
+  if &ft != 'markdown'
+    :%s/\s\+$//ge
+  endif
+endf
