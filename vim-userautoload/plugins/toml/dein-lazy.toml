@@ -49,6 +49,18 @@ hook_post_source = '''
 	      \ '<denite:move_to_previous_line>',
 	      \ 'noremap'
 	      \)
+	call denite#custom#map(
+	      \ 'normal',
+	      \ 'gs',
+	      \ '<denite:do_action:split>',
+	      \ 'noremap'
+	      \)
+	call denite#custom#map(
+	      \ 'normal',
+	      \ 'gv',
+	      \ '<denite:do_action:vsplit>',
+	      \ 'noremap'
+	      \)
 '''
 
 [[plugins]]
@@ -103,7 +115,7 @@ hook_add = '''
     \   'outputter/error/error' : 'buffer',
     \   'outputter/buffer/split' : '',
     \   'cmdopt': '-shell-escape',
-    \   'exec': ['%c %o %s'] 
+    \   'exec': ['%c %o %s']
     \ }
 '''
 
