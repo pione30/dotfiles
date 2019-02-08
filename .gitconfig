@@ -1,16 +1,16 @@
 [user]
-	email = g.pionelish30@gmail.com
-	name = pione30
+  email = g.pionelish30@gmail.com
+  name = pione30
 [core]
-	autocrlf = input
+  autocrlf = input
 [color]
-	ui = true
+  ui = true
 [push]
-	default = simple
+  default = simple
 [merge]
-	ff = false
+  ff = false
 [pull]
-	ff = only
+  ff = only
 [fetch]
   prune = true
 [alias]
