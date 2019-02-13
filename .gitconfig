@@ -14,4 +14,4 @@
 [fetch]
   prune = true
 [alias]
-  pp = !git pull && git branch --merged | egrep -v '^\\*|master$|develop$'| xargs --no-run-if-empty git branch -d
+  pp = !git pull && git branch --merged | egrep -v '^\\*|master$|develop$'| xargs -I % git branch -d %
