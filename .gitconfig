@@ -14,4 +14,16 @@
 [fetch]
   prune = true
 [alias]
-  pp = !git pull && git branch --merged | egrep -v '^\\*|master$|develop$'| xargs -I % git branch -d %
+  a   = add
+  b   = branch
+  ch  = checkout
+  cm  = commit
+  cma = commit --amend
+  cp  = cherry-pick
+  d   = diff
+  ds  = diff --staged
+  l   = log
+  lp  = log -p
+  s   = status
+  pp  = !git pull && git branch --merged | egrep -v '^\\*|master$|develop$'| xargs -I % git branch -d %
+  rb  = rebase
