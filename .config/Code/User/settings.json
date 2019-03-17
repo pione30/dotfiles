@@ -1,0 +1,14 @@
+{
+    "editor.find.autoFindInSelection": true,
+    "editor.fontSize": 15,
+    "editor.minimap.enabled": false,
+    "editor.tabSize": 2,
+    "vim.easymotion": true,
+    "vim.handleKeys": { "<C-f>": false },
+    "vim.hlsearch": true,
+    "vim.leader": " ",
+    "vim.useSystemClipboard": true,
+    "vim.visualstar": true,
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Monokai Dimmed"
+}
