@@ -6,3 +6,11 @@ for df in \.*; do
     echo "ln -sf ~/dotfiles/$df ~/$df"
   fi
 done
+
+for config_file in `find .config`; do
+  if [ -d $config_file ]; then
+    mkdir -p ~/$config_file
+  elif [ -f $config_file ]; then
+    ln -svf $config_file ~/$config_file
+  fi
+done
