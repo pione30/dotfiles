@@ -10,6 +10,6 @@ for config_file in `find .config`; do
   if [ -d $config_file ]; then
     mkdir -p ~/$config_file
   elif [ -f $config_file ]; then
-    ln -svf $config_file ~/$config_file
+    ln -svf ~/dotfiles/$config_file ~/$config_file
   fi
 done
