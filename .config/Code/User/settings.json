@@ -10,5 +10,7 @@
     "vim.useSystemClipboard": true,
     "vim.visualstar": true,
     "window.zoomLevel": 0,
-    "workbench.colorTheme": "Monokai Dimmed"
+    "workbench.colorTheme": "Monokai Dimmed",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false
 }
