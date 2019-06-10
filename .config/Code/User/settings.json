@@ -12,5 +12,15 @@
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Monokai Dimmed",
     "workbench.editor.enablePreview": false,
-    "workbench.editor.enablePreviewFromQuickOpen": false
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "ruby.intellisense": "rubyLocate",
+    "ruby.format": "rubocop",
+    "ruby.lint": {
+        "ruby": true,
+        "rubocop": true
+    },
+    "ruby.useBundler": true,
+    "ruby.useLanguageServer": true,
+    "ruby.rubocop.useBundler": true
 }
+
