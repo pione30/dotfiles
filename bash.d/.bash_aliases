@@ -26,6 +26,9 @@ alias vimtex='vim --servername LATEX'
 # docker-compose
 alias dce='docker-compose exec'
 
-# bundle exec rails
+# bundle exec
+alias be='bundle exec'
 alias ber='bundle exec rails'
-alias berc='bundle exec rails console'
+alias berc='bundle exec rails c'
+alias bers='bundle exec rails s'
+alias bersp='bundle exec rspec'
