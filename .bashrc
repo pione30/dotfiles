@@ -1,6 +1,6 @@
 source ~/dotfiles/sh-commonrc/.commonrc
-. ~/dotfiles/bash.d/.bash_basic
-. ~/dotfiles/bash.d/.bash_aliases
-. ~/dotfiles/bash.d/.bash_ssh
-. ~/dotfiles/bash.d/.bash_man_colorized
-. ~/dotfiles/bash.d/.bash_version_managers
+source ~/dotfiles/bash.d/.bash_basic
+source ~/dotfiles/bash.d/.bash_aliases
+source ~/dotfiles/bash.d/.bash_ssh
+source ~/dotfiles/bash.d/.bash_man_colorized
+source ~/dotfiles/bash.d/.bash_version_managers
