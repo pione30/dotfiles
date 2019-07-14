@@ -25,6 +25,16 @@ zstyle ':vcs_info:git:*' stagedstr "%F{yellow}+"
 zstyle ':vcs_info:git:*' unstagedstr "%F{red}*"
 zstyle ':vcs_info:*' formats "%F{magenta}%c%u(%b)%f"
 zstyle ':vcs_info:*' actionformats "%F{red}[%b|%a]"
+
+## Hooks in vcs_info
+zstyle ':vcs_info:git+set-message:*' hooks git-untracked
+
+function +vi-git-untracked() {
+  if [ "$(git status --porcelain | awk '{print $1}' | grep -F '??' 2>/dev/null)" != "" ]; then
+    hook_com[unstaged]+='?'
+  fi
+}
+
 precmd () { vcs_info }
 PROMPT='%{${fg[green]}%}%n@%m %{${fg[cyan]}%}%~ ${vcs_info_msg_0_} %{${fg[blue]}%}%# %{${reset_color}%}'
 
