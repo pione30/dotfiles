@@ -17,39 +17,6 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 
-# PROMPT with vcs_info
-autoload -Uz vcs_info
-setopt prompt_subst
-zstyle ':vcs_info:git:*' check-for-changes true
-zstyle ':vcs_info:git:*' stagedstr "%F{yellow}+"
-zstyle ':vcs_info:git:*' unstagedstr "%F{red}*"
-zstyle ':vcs_info:*' formats "%F{magenta}%c%u%m(%b)%f"
-zstyle ':vcs_info:*' actionformats "%F{red}[%b|%a]"
-
-## Hooks in vcs_info
-zstyle ':vcs_info:git+set-message:*' hooks \
-  git-untracked \
-  git-stash-count
-
-## show '?' if exists untracked files
-function +vi-git-untracked() {
-  if [ "$(git status --porcelain | awk '{print $1}' | grep -F '??' 2>/dev/null)" != "" ]; then
-    hook_com[unstaged]+='?'
-  fi
-}
-
-## show the size of stash list
-function +vi-git-stash-count() {
-  local stash
-  stash=$(git stash list 2>/dev/null | wc -l | tr -d ' ')
-  if [ "${stash}" -gt 0 ]; then
-      hook_com[misc]+="\$${stash}"
-  fi
-}
-
-precmd () { vcs_info }
-PROMPT='%{${fg[green]}%}%n@%m %{${fg[cyan]}%}%~ ${vcs_info_msg_0_} %{${fg[blue]}%}%# %{${reset_color}%}'
-
 ########################################
 # bindkey
 #
