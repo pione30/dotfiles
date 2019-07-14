@@ -23,6 +23,9 @@ SAVEHIST=10000
 # vi-like keybind
 bindkey -v
 
+# backspace キーを使えるようにする
+bindkey "^?" backward-delete-char
+
 # Ctrl+r で history のインクリメンタルサーチ, Ctrl+s で逆順
 bindkey '^r' history-incremental-pattern-search-backward
 bindkey '^s' history-incremental-pattern-search-forward
