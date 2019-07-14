@@ -4,7 +4,7 @@ setopt prompt_subst
 zstyle ':vcs_info:git:*' check-for-changes true
 zstyle ':vcs_info:git:*' stagedstr "%F{yellow}+"
 zstyle ':vcs_info:git:*' unstagedstr "%F{red}*"
-zstyle ':vcs_info:*' formats "%F{magenta}%c%u%m(%b)%f"
+zstyle ':vcs_info:*' formats "%F{magenta}%c%u%m(%b) %f"
 zstyle ':vcs_info:*' actionformats "%F{red}[%b|%a]"
 
 ########################################
@@ -31,4 +31,4 @@ function +vi-git-stash-count() {
 }
 
 precmd () { vcs_info }
-PROMPT='%{${fg[green]}%}%n@%m %{${fg[cyan]}%}%~ ${vcs_info_msg_0_} %{${fg[blue]}%}%# %{${reset_color}%}'
+PROMPT='%{${fg[green]}%}%n@%m %{${fg[cyan]}%}%~ ${vcs_info_msg_0_}%{${fg[blue]}%}%# %{${reset_color}%}'
