@@ -1,0 +1,75 @@
+autoload -Uz colors
+colors
+
+# 区切り文字の設定
+autoload -Uz select-word-style
+select-word-style default
+zstyle ':zle:*' word-chars "_-./;@"
+zstyle ':zle:*' word-style unspecified
+
+# 複数ファイルの mv
+# 例: zmv *.txt *.txt.bk
+autoload -Uz zmv
+alias zmv='noglob zmv -W'
+
+# history
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+
+########################################
+# bindkey
+#
+# vi-like keybind
+bindkey -v
+
+# backspace キーを使えるようにする
+bindkey "^?" backward-delete-char
+
+# Ctrl+r で history のインクリメンタルサーチ, Ctrl+s で逆順
+bindkey '^r' history-incremental-pattern-search-backward
+bindkey '^s' history-incremental-pattern-search-forward
+
+# コマンドを途中まで入力後, Ctrl+p で history から絞り込み, Ctrl+b で逆順
+autoload -Uz history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey "^p" history-beginning-search-backward-end
+bindkey "^b" history-beginning-search-forward-end
+
+########################################
+# completion
+#
+autoload -Uz compinit
+compinit
+
+# 補完で大文字にもマッチ
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+# sudo の後ろでコマンド名を補完する
+zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin \
+                   /usr/sbin /usr/bin /sbin /bin
+
+########################################
+# setopt
+#
+# 同時に起動した zsh の間でヒストリを共有する
+setopt share_history
+
+# 同じコマンドをヒストリに残さない
+setopt hist_ignore_all_dups
+
+# スペースから始まるコマンド行はヒストリに残さない
+setopt hist_ignore_space
+
+# ヒストリに保存するときに余分なスペースを削除する
+setopt hist_reduce_blanks
+
+# ディレクトリ名だけで cd する
+setopt auto_cd
+
+# 高機能なワイルドカード展開を使用する
+setopt extended_glob
+
+# コマンドミスを修正
+setopt correct

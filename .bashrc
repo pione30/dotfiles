@@ -1,5 +1,3 @@
-. ~/dotfiles/bash.d/.bash_basic
-. ~/dotfiles/bash.d/.bash_aliases
-. ~/dotfiles/bash.d/.bash_ssh
-. ~/dotfiles/bash.d/.bash_man_colorized  
-. ~/dotfiles/bash.d/.bash_version_managers
+source ~/dotfiles/sh-commonrc/.commonrc
+source ~/dotfiles/bash.d/.bash_basic
+source ~/dotfiles/bash.d/.bash_prompt
