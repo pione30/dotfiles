@@ -30,6 +30,7 @@
     },
     "ruby.useBundler": true,
     "ruby.useLanguageServer": true,
-    "ruby.rubocop.useBundler": true
+    "ruby.rubocop.useBundler": true,
+    "markdown.preview.fontSize": 15
 }
 
