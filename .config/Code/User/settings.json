@@ -13,7 +13,10 @@
     "eslint.autoFixOnSave": true,
     "vetur.validation.template": false,
     "vim.easymotion": true,
-    "vim.handleKeys": { "<C-f>": false },
+    "vim.handleKeys": {
+        "<C-f>": false,
+        "<C-k>": false
+    },
     "vim.hlsearch": true,
     "vim.leader": " ",
     "vim.useSystemClipboard": true,
