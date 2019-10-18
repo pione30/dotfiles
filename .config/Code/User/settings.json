@@ -25,7 +25,16 @@
     "vim.useSystemClipboard": true,
     "vim.visualstar": true,
     "window.zoomLevel": 0,
-    "workbench.colorTheme": "Monokai Dimmed",
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.colorCustomizations": {
+        "[Solarized Dark]": {
+            "editorCursor.foreground": "#839496",
+            "editorCursor.background": "#839496",
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "keywords": "#D33682"
+    },
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "ruby.intellisense": "rubyLocate",
