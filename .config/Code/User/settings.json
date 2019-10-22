@@ -28,6 +28,7 @@
     "workbench.colorTheme": "Solarized Dark",
     "workbench.colorCustomizations": {
         "[Solarized Dark]": {
+            "editor.foreground": "#839496",
             "editorCursor.foreground": "#839496",
             "editorCursor.background": "#839496",
         }
