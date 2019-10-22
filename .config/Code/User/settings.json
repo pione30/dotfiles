@@ -34,7 +34,9 @@
         }
     },
     "editor.tokenColorCustomizations": {
-        "keywords": "#D33682"
+        "[Solarized Dark]": {
+            "keywords": "#D33682"
+        }
     },
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
