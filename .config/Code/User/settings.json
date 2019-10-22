@@ -28,12 +28,15 @@
     "workbench.colorTheme": "Solarized Dark",
     "workbench.colorCustomizations": {
         "[Solarized Dark]": {
+            "editor.foreground": "#839496",
             "editorCursor.foreground": "#839496",
             "editorCursor.background": "#839496",
         }
     },
     "editor.tokenColorCustomizations": {
-        "keywords": "#D33682"
+        "[Solarized Dark]": {
+            "keywords": "#D33682"
+        }
     },
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
