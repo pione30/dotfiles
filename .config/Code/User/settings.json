@@ -14,7 +14,9 @@
         { "language": "typescript", "autoFix": true },
         { "language": "typescriptreact", "autoFix": true }
     ],
-    "eslint.autoFixOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
     "vetur.validation.template": false,
     "vim.easymotion": true,
     "vim.handleKeys": {
