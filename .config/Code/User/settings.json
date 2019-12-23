@@ -10,9 +10,9 @@
     "eslint.validate": [
         "javascript",
         "javascriptreact",
-        { "language": "vue", "autoFix": true },
-        { "language": "typescript", "autoFix": true },
-        { "language": "typescriptreact", "autoFix": true }
+        "vue",
+        "typescript",
+        "typescriptreact",
     ],
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
