@@ -53,5 +53,6 @@
     "ruby.useLanguageServer": true,
     "ruby.rubocop.useBundler": true,
     "markdown.preview.fontSize": 15,
+    "editor.renderWhitespace": "none",
 }
 
