@@ -2,6 +2,7 @@
     "editor.find.autoFindInSelection": true,
     "editor.fontSize": 15,
     "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "none",
     "editor.tabSize": 2,
     "[rust]": {
         "editor.tabSize": 4,
@@ -18,6 +19,23 @@
         "source.fixAll.eslint": true
     },
     "vetur.validation.template": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.statusBar.enabled": false,
+    "gitlens.hovers.enabled": false,
+    "gitlens.views.lineHistory.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.views.repositories.enabled": false,
+    "markdown.preview.fontSize": 15,
+    "ruby.intellisense": "rubyLocate",
+    "ruby.format": "rubocop",
+    "ruby.lint": {
+        "ruby": true,
+        "rubocop": true
+    },
+    "ruby.useBundler": true,
+    "ruby.useLanguageServer": true,
+    "ruby.rubocop.useBundler": true,
     "vim.easymotion": true,
     "vim.handleKeys": {
         "<C-f>": false,
@@ -43,16 +61,4 @@
     },
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
-    "ruby.intellisense": "rubyLocate",
-    "ruby.format": "rubocop",
-    "ruby.lint": {
-        "ruby": true,
-        "rubocop": true
-    },
-    "ruby.useBundler": true,
-    "ruby.useLanguageServer": true,
-    "ruby.rubocop.useBundler": true,
-    "markdown.preview.fontSize": 15,
-    "editor.renderWhitespace": "none",
 }
-
