@@ -1,5 +1,5 @@
 {
-    "editor.find.autoFindInSelection": true,
+    "editor.find.autoFindInSelection": "always",
     "editor.fontSize": 15,
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "none",
