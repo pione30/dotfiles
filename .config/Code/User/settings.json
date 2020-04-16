@@ -31,7 +31,9 @@
     "ruby.format": "rubocop",
     "ruby.lint": {
         "ruby": true,
-        "rubocop": true
+        "rubocop": {
+            "useBundler": true
+        }
     },
     "ruby.useBundler": true,
     "ruby.useLanguageServer": true,
