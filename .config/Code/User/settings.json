@@ -64,4 +64,5 @@
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.focusRecentEditorAfterClose": false,
+    "rust.clippy_preference": "on",
 }
