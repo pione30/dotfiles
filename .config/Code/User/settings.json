@@ -65,4 +65,8 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.focusRecentEditorAfterClose": false,
     "rust.clippy_preference": "on",
+    "rust-analyzer.inlayHints.parameterHints": false,
+    "rust-analyzer.inlayHints.typeHints": false,
+    "rust-analyzer.inlayHints.chainingHints": false,
+    "rust-analyzer.checkOnSave.command": "clippy",
 }
