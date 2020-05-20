@@ -69,4 +69,9 @@
     "rust-analyzer.inlayHints.typeHints": false,
     "rust-analyzer.inlayHints.chainingHints": false,
     "rust-analyzer.checkOnSave.command": "clippy",
+    "bracket-pair-colorizer-2.colors": [
+        "#b58900",
+        "#268BD2",
+        "#d33682"
+    ],
 }
