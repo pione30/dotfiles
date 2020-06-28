@@ -41,7 +41,8 @@
     "vim.easymotion": true,
     "vim.handleKeys": {
         "<C-f>": false,
-        "<C-k>": false
+        "<C-k>": false,
+        "<C-n>": false
     },
     "vim.hlsearch": true,
     "vim.leader": " ",
