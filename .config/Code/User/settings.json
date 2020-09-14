@@ -2,7 +2,7 @@
     "editor.find.autoFindInSelection": "always",
     "editor.fontSize": 15,
     "editor.minimap.enabled": false,
-    "editor.renderWhitespace": "none",
+    "editor.renderWhitespace": "trailing",
     "editor.tabSize": 2,
     "[rust]": {
         "editor.tabSize": 4,
@@ -75,4 +75,5 @@
         "#268BD2",
         "#d33682"
     ],
+    "editor.formatOnSaveMode": "modifications",
 }
