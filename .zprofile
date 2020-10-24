@@ -13,6 +13,9 @@ if [ -f ~/google-cloud-sdk/completion.zsh.inc ]; then
   . ~/google-cloud-sdk/completion.zsh.inc
 fi
 
+# heroku autocomplete setup
+HEROKU_AC_ZSH_SETUP_PATH=~/.cache/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
+
 fpath=(/usr/local/share/zsh-completions $fpath)
 fpath=(/usr/local/share/zsh/site-functions $fpath)
 fpath=(~/.zsh/completion $fpath)
