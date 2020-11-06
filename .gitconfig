@@ -26,5 +26,5 @@
   lp  = log -p
   s   = status
   sw  = switch
-  pp  = !git pull && git branch --merged | egrep -v '^\\*|master$|develop$'| xargs -I % git branch -d %
+  pp  = !git pull && git branch --merged | egrep -v '^\\*|master$|main$|develop$' | xargs -I % git branch -d %
   rb  = rebase
