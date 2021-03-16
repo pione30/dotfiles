@@ -72,4 +72,6 @@
         "#d33682"
     ],
     "editor.formatOnSaveMode": "modifications",
+    "workbench.iconTheme": "vscode-icons",
+    "liveshare.authenticationProvider": "GitHub",
 }
