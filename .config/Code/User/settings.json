@@ -29,16 +29,11 @@
     "gitlens.views.repositories.enabled": false,
     "markdown.preview.fontSize": 15,
     "ruby.intellisense": "rubyLocate",
-    "ruby.format": "rubocop",
     "ruby.lint": {
-        "ruby": true,
-        "rubocop": {
-            "useBundler": true
-        }
+        "ruby": true
     },
     "ruby.useBundler": true,
     "ruby.useLanguageServer": true,
-    "ruby.rubocop.useBundler": true,
     "vim.easymotion": true,
     "vim.handleKeys": {
         "<C-f>": false,
