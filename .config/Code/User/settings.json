@@ -24,9 +24,7 @@
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.statusBar.enabled": false,
     "gitlens.hovers.enabled": false,
-    "gitlens.views.lineHistory.enabled": false,
     "gitlens.codeLens.enabled": false,
-    "gitlens.views.repositories.enabled": false,
     "markdown.preview.fontSize": 15,
     "ruby.intellisense": "rubyLocate",
     "ruby.lint": {
@@ -60,7 +58,6 @@
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.focusRecentEditorAfterClose": false,
-    "rust.clippy_preference": "on",
     "rust-analyzer.inlayHints.parameterHints": false,
     "rust-analyzer.inlayHints.typeHints": false,
     "rust-analyzer.inlayHints.chainingHints": false,
