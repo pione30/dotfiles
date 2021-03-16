@@ -24,21 +24,14 @@
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.statusBar.enabled": false,
     "gitlens.hovers.enabled": false,
-    "gitlens.views.lineHistory.enabled": false,
     "gitlens.codeLens.enabled": false,
-    "gitlens.views.repositories.enabled": false,
     "markdown.preview.fontSize": 15,
     "ruby.intellisense": "rubyLocate",
-    "ruby.format": "rubocop",
     "ruby.lint": {
-        "ruby": true,
-        "rubocop": {
-            "useBundler": true
-        }
+        "ruby": true
     },
     "ruby.useBundler": true,
     "ruby.useLanguageServer": true,
-    "ruby.rubocop.useBundler": true,
     "vim.easymotion": true,
     "vim.handleKeys": {
         "<C-f>": false,
@@ -65,7 +58,6 @@
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.focusRecentEditorAfterClose": false,
-    "rust.clippy_preference": "on",
     "rust-analyzer.inlayHints.parameterHints": false,
     "rust-analyzer.inlayHints.typeHints": false,
     "rust-analyzer.inlayHints.chainingHints": false,
@@ -77,4 +69,6 @@
         "#d33682"
     ],
     "editor.formatOnSaveMode": "modifications",
+    "workbench.iconTheme": "vscode-icons",
+    "liveshare.authenticationProvider": "GitHub",
 }
