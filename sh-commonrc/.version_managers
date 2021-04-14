@@ -6,5 +6,10 @@ elif [ -s "/usr/local/bin/rbenv" ]; then
   eval "$(rbenv init -)"
 fi
 
+## Load nodenv automatically
+if type "nodenv" > /dev/null 2>&1; then
+  eval "$(nodenv init -)"
+fi
+
 ## cargo bin
 export PATH="$HOME/.cargo/bin:$PATH"
