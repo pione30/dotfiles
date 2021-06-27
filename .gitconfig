@@ -28,3 +28,5 @@
   sw  = switch
   pp  = !git pull && git branch --merged | egrep -v '^\\*|master$|main$|develop$' | xargs -I % git branch -d %
   rb  = rebase
+[init]
+	defaultBranch = master
