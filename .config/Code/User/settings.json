@@ -41,12 +41,17 @@
     "vim.leader": " ",
     "vim.useSystemClipboard": true,
     "vim.visualstar": true,
+    "editor.bracketPairColorization.enabled": true,
     "workbench.colorTheme": "Solarized Dark",
     "workbench.colorCustomizations": {
         "[Solarized Dark]": {
             "editor.foreground": "#839496",
             "editorCursor.foreground": "#839496",
             "editorCursor.background": "#839496",
+            "editorBracketHighlight.foreground1": "#839496",
+            "editorBracketHighlight.foreground2": "#b58900",
+            "editorBracketHighlight.foreground3": "#268BD2",
+            "editorBracketHighlight.foreground4": "#d33682"
         }
     },
     "editor.tokenColorCustomizations": {
@@ -61,12 +66,6 @@
     "rust-analyzer.inlayHints.typeHints": false,
     "rust-analyzer.inlayHints.chainingHints": false,
     "rust-analyzer.checkOnSave.command": "clippy",
-    "bracket-pair-colorizer-2.colors": [
-        "#839496",
-        "#b58900",
-        "#268BD2",
-        "#d33682"
-    ],
     "editor.formatOnSaveMode": "modifications",
     "workbench.iconTheme": "vscode-icons",
     "liveshare.authenticationProvider": "GitHub",
