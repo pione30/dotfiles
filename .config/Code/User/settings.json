@@ -47,7 +47,6 @@
         "[Solarized Dark]": {
             "editor.foreground": "#839496",
             "editorCursor.foreground": "#839496",
-            "editorCursor.background": "#839496",
             "editorBracketHighlight.foreground1": "#839496",
             "editorBracketHighlight.foreground2": "#b58900",
             "editorBracketHighlight.foreground3": "#268BD2",
