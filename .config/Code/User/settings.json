@@ -6,7 +6,8 @@
     "editor.tabSize": 2,
     "[rust]": {
         "editor.tabSize": 4,
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "editor.formatOnSaveMode": "file"
     },
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
