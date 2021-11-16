@@ -30,3 +30,5 @@
   rb  = rebase
 [init]
 	defaultBranch = master
+[help]
+	autoCorrect = prompt
