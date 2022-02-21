@@ -73,4 +73,5 @@
     "terminal.integrated.defaultProfile.osx": "zsh",
     "terminal.integrated.drawBoldTextInBrightColors": false,
     "terminal.integrated.fontSize": 14,
+    "diffEditor.ignoreTrimWhitespace": false,
 }
