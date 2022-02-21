@@ -32,3 +32,5 @@
 	defaultBranch = master
 [help]
 	autoCorrect = prompt
+[rebase]
+	autosquash = true
