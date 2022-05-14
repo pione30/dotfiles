@@ -40,8 +40,10 @@ bindkey "^b" history-beginning-search-forward-end
 ########################################
 # completion
 #
-autoload -Uz compinit
-compinit
+if ! command -v compinit > /dev/null; then
+  autoload -Uz compinit
+  compinit
+fi
 
 # 補完で大文字にもマッチ
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
