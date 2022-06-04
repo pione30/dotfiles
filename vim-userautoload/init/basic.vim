@@ -1,3 +1,7 @@
+if &compatible
+  set nocompatible " Be iMproved
+endif
+
 filetype plugin indent on
 
 set mouse=a
