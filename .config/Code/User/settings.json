@@ -32,6 +32,7 @@
     "vim.easymotion": true,
     "vim.handleKeys": {
         "<C-f>": false,
+        "<C-j>": false,
         "<C-k>": false
     },
     "vim.hlsearch": true,
