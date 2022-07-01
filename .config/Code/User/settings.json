@@ -75,4 +75,13 @@
     "terminal.integrated.drawBoldTextInBrightColors": false,
     "terminal.integrated.fontSize": 14,
     "diffEditor.ignoreTrimWhitespace": false,
+    // https://github.com/microsoft/vscode/issues/143061#issuecomment-1042785423
+    "terminal.integrated.profiles.osx": {
+        "zsh": {
+            "path": "/bin/zsh",
+            "args": [
+                "-l", "-i"
+            ]
+        }
+    },
 }
