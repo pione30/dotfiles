@@ -28,6 +28,9 @@
   sw  = switch
   pp  = !git pull && git branch --merged | egrep -v '^\\*|master$|main$|develop$' | xargs -I % git branch -d %
   rb  = rebase
+  # For `gi t*` typo
+  ta  = add
+  ts  = status
 [init]
 	defaultBranch = master
 [help]
