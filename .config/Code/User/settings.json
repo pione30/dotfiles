@@ -12,7 +12,7 @@
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
-    "[typescript][typescriptreact]": {
+    "[typescript][typescriptreact][vue]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
