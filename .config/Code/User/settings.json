@@ -40,6 +40,7 @@
     "vim.leader": " ",
     "vim.useSystemClipboard": true,
     "vim.visualstar": true,
+    "vim.camelCaseMotion.enable": true,
     "editor.bracketPairColorization.enabled": true,
     "workbench.colorTheme": "Solarized Dark",
     "workbench.colorCustomizations": {
