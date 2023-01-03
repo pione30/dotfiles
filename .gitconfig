@@ -38,8 +38,8 @@
 [rebase]
 	autosquash = true
 [credential]
-	helper = /mnt/c/Program\\ Files\\ \\(x86\\)/Git\\ Credential\\ Manager/git-credential-manager-core.exe
-	helper = /usr/local/share/gcm-core/git-credential-manager-core
+	helper = /mnt/c/Program\\ Files\\ \\(x86\\)/Git\\ Credential\\ Manager/git-credential-manager.exe
+	helper = /usr/local/share/gcm-core/git-credential-manager
 [credential "https://dev.azure.com"]
 	useHttpPath = true
 [includeIf "gitdir:~/ghe/"]
