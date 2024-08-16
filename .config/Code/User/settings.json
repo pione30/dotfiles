@@ -4,6 +4,7 @@
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "trailing",
     "editor.tabSize": 2,
+    "editor.formatOnSaveMode": "modifications",
     "[rust]": {
         "editor.tabSize": 4,
         "editor.formatOnSave": true,
@@ -12,9 +13,14 @@
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": "explicit"
     },
-    "[typescript][typescriptreact][vue]": {
+    "[typescript][typescriptreact]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSaveMode": "file"
     },
     "vetur.validation.template": false,
     "gitlens.currentLine.enabled": false,
@@ -66,7 +72,6 @@
     "rust-analyzer.inlayHints.typeHints": false,
     "rust-analyzer.inlayHints.chainingHints": false,
     "rust-analyzer.checkOnSave.command": "clippy",
-    "editor.formatOnSaveMode": "modifications",
     "workbench.iconTheme": "vscode-icons",
     "liveshare.authenticationProvider": "GitHub",
     "editor.cursorStyle": "line",
