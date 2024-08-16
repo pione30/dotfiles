@@ -10,7 +10,7 @@
         "editor.formatOnSaveMode": "file"
     },
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": "explicit"
     },
     "[typescript][typescriptreact][vue]": {
         "editor.formatOnSave": true,
