@@ -40,7 +40,9 @@
     "vim.handleKeys": {
         "<C-f>": false,
         "<C-j>": false,
-        "<C-k>": false
+        "<C-k>": false,
+        "<C-n>": false,
+        "<C-p>": false
     },
     "vim.hlsearch": true,
     "vim.leader": " ",
