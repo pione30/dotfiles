@@ -10,7 +10,7 @@ fi
 if type jenv > /dev/null 2>&1; then
   export PATH="$HOME/.jenv/bin:$PATH"
   eval "$(jenv init -)"
-  jenv enable-plugin export
+  jenv enable-plugin export > /dev/null
 fi
 
 ## Load nodenv automatically
