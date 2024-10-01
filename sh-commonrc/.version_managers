@@ -7,7 +7,7 @@ elif [ -s "/usr/local/bin/rbenv" ]; then
 fi
 
 ## Load jenv
-if [ -s "$HOME/.jenv/bin" ]; then
+if type jenv > /dev/null 2>&1; then
   export PATH="$HOME/.jenv/bin:$PATH"
   eval "$(jenv init -)"
 fi
