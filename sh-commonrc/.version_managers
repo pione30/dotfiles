@@ -6,6 +6,12 @@ elif [ -s "/usr/local/bin/rbenv" ]; then
   eval "$(rbenv init -)"
 fi
 
+## Load jenv
+if [ -s "$HOME/.jenv/bin" ]; then
+  export PATH="$HOME/.jenv/bin:$PATH"
+  eval "$(jenv init -)"
+fi
+
 ## Load nodenv automatically
 if type "nodenv" > /dev/null 2>&1; then
   eval "$(nodenv init -)"
