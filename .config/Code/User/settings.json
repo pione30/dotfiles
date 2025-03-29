@@ -29,6 +29,7 @@
     "gitlens.hovers.enabled": true,
     "gitlens.hovers.currentLine.changes": false,
     "gitlens.hovers.currentLine.over": "line",
+    "git.blame.statusBarItem.enabled": false,
     "markdown.preview.fontSize": 15,
     "ruby.intellisense": "rubyLocate",
     "ruby.lint": {
