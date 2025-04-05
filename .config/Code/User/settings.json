@@ -1,5 +1,5 @@
 {
-    "editor.find.autoFindInSelection": "always",
+    "editor.find.autoFindInSelection": "multiline",
     "editor.fontSize": 15,
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "trailing",
