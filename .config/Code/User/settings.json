@@ -96,4 +96,5 @@
     },
     "window.newWindowDimensions": "inherit",
     "vsicons.dontShowNewVersionMessage": true,
+    "chat.disableAIFeatures": true,
 }
