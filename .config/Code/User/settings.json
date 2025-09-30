@@ -98,4 +98,6 @@
     "vsicons.dontShowNewVersionMessage": true,
     "chat.disableAIFeatures": true,
     "githubPullRequests.pullBranch": "never",
+    "vue.editor.reactivityVisualization": false,
+    "vue.editor.templateInterpolationDecorators": false,
 }
