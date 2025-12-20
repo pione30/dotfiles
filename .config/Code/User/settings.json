@@ -100,4 +100,6 @@
     "githubPullRequests.pullBranch": "never",
     "vue.editor.reactivityVisualization": false,
     "vue.editor.templateInterpolationDecorators": false,
+    "terminal.integrated.tabs.enabled": false,
+    "terminal.integrated.suggest.enabled": false,
 }
