@@ -25,7 +25,6 @@ export NVM_DIR="$HOME/.nvm"
 if [[ -n ${ZSH_VERSION-} ]]; then
   autoload -U add-zsh-hook
   load-nvmrc() {
-    local node_version="$(nvm version)"
     local nvmrc_path="$(nvm_find_nvmrc)"
 
     if [ -n "$nvmrc_path" ]; then
@@ -33,12 +32,9 @@ if [[ -n ${ZSH_VERSION-} ]]; then
 
       if [ "$nvmrc_node_version" = "N/A" ]; then
         nvm install
-      elif [ "$nvmrc_node_version" != "$node_version" ]; then
+      elif [ "$nvmrc_node_version" != "$(nvm version)" ]; then
         nvm use
       fi
-    elif [ "$node_version" != "$(nvm version default)" ]; then
-      echo "Reverting to nvm default version"
-      nvm use default
     fi
   }
   add-zsh-hook chpwd load-nvmrc
