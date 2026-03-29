@@ -101,4 +101,5 @@
     "vue.editor.templateInterpolationDecorators": false,
     "terminal.integrated.tabs.enabled": false,
     "terminal.integrated.suggest.enabled": false,
+    "terminal.integrated.initialHint": false,
 }
